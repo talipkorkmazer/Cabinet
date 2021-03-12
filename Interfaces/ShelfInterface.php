@@ -4,13 +4,13 @@ namespace App\Interfaces;
 
 interface ShelfInterface
 {
-    public function add(ItemInterface $item);
+    public function add(ItemInterface $item): bool;
 
-    public function remove(ItemInterface $item);
+    public function remove(ItemInterface $item): bool;
 
-    public function increaseAvailableSize(int $size);
+    public function increaseAvailableSize(int $size): void;
 
-    public function decreaseAvailableSize(int $size);
+    public function decreaseAvailableSize(int $size): void;
 
-    public function getAvailableSize();
+    public function getAvailableSize(): int;
 }

@@ -4,5 +4,5 @@ namespace App\Interfaces;
 
 interface ItemInterface
 {
-    public function getSize();
+    public function getSize(): int;
 }
